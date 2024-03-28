@@ -1,2 +1,2 @@
 # capstone
-the evoltion of fashion
+the evolution of fashion
