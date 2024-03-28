@@ -1,0 +1,16 @@
+.navbar {
+    background-color: orange;
+    opacity: 50%
+}
+.navbar-brand,
+.navbar-nav {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+/* .carousel,
+.item,
+.item.active {
+    height: 100vh;
+} */
+
