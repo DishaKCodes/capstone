@@ -57,4 +57,20 @@ body{
               height: 100vh; /* Set height of the carousel to full viewport height */
             }
           }
+
+          @media (max-width: 767px) {
+            body, html {
+              height: 100%;
+              margin: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          
+            .carousel {
+              width: 100%;
+              max-width: 400px; /* Adjust the maximum width of the carousel as needed */
+            }
+          }
+          
         
