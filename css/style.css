@@ -79,6 +79,9 @@ body{
               top: 0;
               width: 100%;
             }
+            h3{
+                font-size: 80%;
+            }
           }
           .carousel-inner .item img {
             width: 100%;
