@@ -68,9 +68,60 @@ body{
             }
           
             .carousel {
-              width: 100%;
-              max-width: 400px; /* Adjust the maximum width of the carousel as needed */
+                margin: auto;
+                width: 100%;
+              /* Adjust the maximum width of the carousel as needed */
             }
           }
+          @media (max-width: 767px) {
+            .navbar {
+              position: fixed;
+              top: 0;
+              width: 100%;
+            }
+          }
+          .carousel-inner .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          /* #carousel-container {
+            position: relative;
+            z-index: 1; /* Ensure the carousel appears above the background */
           
         
+        /* #carousel-container::before {
+            content: "";
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            filter: blur(10px);
+            z-index: -1;
+        } */
+        body {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .transparent-navbar {
+            background-color: transparent;
+            border-color: transparent;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        .blurred-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(5000px); /* Adjust the blur intensity as needed */
+            opacity:0.25;
+            
+        }

@@ -75,7 +75,7 @@
               <div class="item">
                 <img src="https://images.unsplash.com/photo-1657089975754-c93bde43b01e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2V2YSUyMGt1bmolMjB2cmluZGF2YW58ZW58MHx8MHx8fDA%3D" alt="image5" style="width:100%;">
                 <div class="carousel-caption">
-                    <h3>Vrindavan, where the veil between the material and spiritual worlds grows thin, <br>inviting pilgrims to behold the beauty of the divine <br>in every flower, every leaf, and every sunset</h3>
+                    <h3>Vrindavan, where the veil between the material and spiritual worlds grows thin, <br>the beauty of the divine in every flower, every leaf, and every sunset</h3>
                     
                   </div>
               </div>
@@ -92,6 +92,55 @@
           </a>
         </div>
       </div>
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Function to update the background based on the active image
+            function updateBackground() {
+                var activeImageSrc = $('.carousel-inner .item.active img').attr('src');
+                $('body').css({
+                    'background-image': 'url(' + activeImageSrc + ')',
+                    'background-size': 'cover',
+                    'filter': 'blur(10px)' // Adjust the blur intensity as needed
+                });
+            }
+
+            // Update background when the carousel slide changes
+            $('#myCarousel').on('slid.bs.carousel', function () {
+                updateBackground();
+            });
+
+            // Initially update background when the page loads
+            updateBackground();
+        });
+    </script> -->
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript code for updating background based on carousel -->
+    <script>
+        $(document).ready(function() {
+            // Function to update the background based on the active image
+            function updateBackground() {
+                // Get the source (URL) of the active image
+                var activeImageSrc = $('#myCarousel .carousel-inner .item.active img').attr('src');
+                
+                // Set the background of the body to the active image
+                $('body').css({
+                    'background-image': 'url(' + activeImageSrc + ')'
+                });
+            }
+
+            // Update background when the carousel slide changes
+            $('#myCarousel').on('slid.bs.carousel', function () {
+                updateBackground();
+            });
+
+            // Initially update background when the page loads
+            updateBackground();
+        });
+    </script>
 </body>
 </html>
 
