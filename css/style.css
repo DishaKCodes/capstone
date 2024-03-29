@@ -41,10 +41,18 @@ body{
         top: 50%;
         transform: translateY(-50%);
     }
-    .navbar-inverse .navbar-nav > li > a:focus,
-        .navbar-inverse .navbar-nav > .active > a,
-        .navbar-inverse .navbar-nav > .active > a:focus,
-        .navbar-inverse .navbar-nav > .active > a:hover {
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
             background-color: #D53610; /* Change the background color to orange */
             color: #fff; /* Change the text color to white */
         }
+
+@media (max-width: 767px) { /* Adjust breakpoint to target mobile devices */
+            .carousel-inner .item img {
+                display: block;
+                margin: 0 auto; /* Centers the images horizontally */
+            }
+        }
+        
