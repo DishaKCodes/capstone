@@ -49,10 +49,12 @@ body{
             color: #fff; /* Change the text color to white */
         }
 
-@media (max-width: 767px) { /* Adjust breakpoint to target mobile devices */
-            .carousel-inner .item img {
-                display: block;
-                margin: 0 auto; /* Centers the images horizontally */
+        @media (max-width: 767px) {
+            .carousel {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh; /* Set height of the carousel to full viewport height */
             }
-        }
+          }
         
