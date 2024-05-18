@@ -136,19 +136,97 @@ body{
           width: 100%;
       }
       
-      .content {
-          margin-top: 50px; /* Adjust this value based on the height of your navbar */
+      .title{
+        margin-top: 100px;
+      }
+      /* .spacer{
+        height: 10vh;
+      } */
+      .row img{
+        width: 100%;
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+      .info{
+        background-color:#E6C058;
+        height: 75%;
+        margin: 5%;
+    
+      }
+      .shadow{
+        width: 60%;
+        background-color:#E6C058;
+        margin: auto;
       }
       .spacer{
-        height: 10vh;
+        height: 100px;
       }
-      .row{
-        border: 1px solid white;
-        
+      .body{
+        display: block;
+        width: 50%;
+        margin: auto;
+      }
+      
+    
+    .shadow img {
+      width: 90%;
+        position: relative; /* Make the image position relative */
+        top: 30px; /* Push the image 10px below */
+        left: 30px; /* Push the image 10px to the right */
+    }
+
+   
+    p{
+      font-size: larger;
+    }
+    .info{
+      margin-top: 20px;
+      padding: 2%;
+      border-radius: 2%;
+    }
+    @media (max-width: 767px){
+      .title{
+        margin-top: 1000px;
       }
       .row img{
-        width: 60%;
-        margin: auto;
-        margin-top: 15%;
-        margin-bottom: 15%;
+        width: 90px;
       }
+      .shadow{
+        width: 140px;
+      }
+      .shadow img {
+          width: 90%;
+          position: relative; /* Make the image position relative */
+          top: 20px; /* Push the image 10px below */
+          left: 20px; /* Push the image 10px to the right */
+      }
+      p{
+        font-size: x-small;
+        padding: 0;
+      }
+    }
+    .info {
+      margin-top: 10%;
+    }
+    body{
+    background-image: url(https://images.unsplash.com/photo-1707497009301-78bed8b1a51d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTh8fG9yYW5nZSUyMGJhY2tncm91bmRzfGVufDB8fDB8fHww);
+    background-size: cover;
+    background-repeat: no-repeat;  /* Prevents the image from repeating */
+    background-position: center;   /* Centers the background image */
+    background-attachment: fixed;
+    }
+    a, h1{
+      font-size: 1.5em;
+      color: #856564;
+    }
+    
+    @media (max-width: 700px) {
+      p {
+        font-size: 1.5rem; /* Font size for screens 600px and wider */
+      }
+    }
+    
+
+    
+    
