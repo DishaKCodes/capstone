@@ -128,3 +128,27 @@ body{
             opacity:0.1;
             
         }
+        .navbar {
+          margin: 0;
+          padding: 0;
+          position: fixed;
+          top: 0;
+          width: 100%;
+      }
+      
+      .content {
+          margin-top: 50px; /* Adjust this value based on the height of your navbar */
+      }
+      .spacer{
+        height: 10vh;
+      }
+      .row{
+        border: 1px solid white;
+        
+      }
+      .row img{
+        width: 60%;
+        margin: auto;
+        margin-top: 15%;
+        margin-bottom: 15%;
+      }
